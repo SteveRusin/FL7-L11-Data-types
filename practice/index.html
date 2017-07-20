@@ -1,0 +1,2235 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Practice</title>
+</head>
+
+<body>
+    <textarea name="" id="myTextAres" cols="30" rows="10"></textarea>
+    <button onclick="getDataFromTextArea()">Submit</button>
+    <div style="display: flex">
+        <div>
+            <h2>Data to input(var 1)</h2>
+            <pre>[{
+  "id": 1,
+  "first_name": "Marven",
+  "last_name": "Benger",
+  "email": "mbenger0@ycombinator.com",
+  "gender": "Male",
+  "favorite_color": "Pink"
+}, {
+  "id": 2,
+  "first_name": "Bartholomeo",
+  "last_name": "Hartridge",
+  "email": "bhartridge1@deliciousdays.com",
+  "gender": "Male",
+  "favorite_color": "Puce"
+}, {
+  "id": 3,
+  "first_name": "Hali",
+  "last_name": "Jaumet",
+  "email": "hjaumet2@nifty.com",
+  "gender": "Female",
+  "favorite_color": "Maroon"
+}, {
+  "id": 4,
+  "first_name": "Abie",
+  "last_name": "Loreit",
+  "email": "aloreit3@senate.gov",
+  "gender": "Male",
+  "favorite_color": "Goldenrod"
+}, {
+  "id": 5,
+  "first_name": "Modesta",
+  "last_name": "Inchley",
+  "email": "minchley4@histats.com",
+  "gender": "Female",
+  "favorite_color": "Fuscia"
+}, {
+  "id": 6,
+  "first_name": "Loydie",
+  "last_name": "Wandrich",
+  "email": "lwandrich5@answers.com",
+  "gender": "Male",
+  "favorite_color": "Violet"
+}, {
+  "id": 7,
+  "first_name": "Maurizio",
+  "last_name": "Bahls",
+  "email": "mbahls6@google.nl",
+  "gender": "Male",
+  "favorite_color": "Goldenrod"
+}, {
+  "id": 8,
+  "first_name": "Mirilla",
+  "last_name": "Mitchelmore",
+  "email": "mmitchelmore7@google.de",
+  "gender": "Female",
+  "favorite_color": "Blue"
+}, {
+  "id": 9,
+  "first_name": "Amalie",
+  "last_name": "Coolahan",
+  "email": "acoolahan8@example.com",
+  "gender": "Female",
+  "favorite_color": "Violet"
+}, {
+  "id": 10,
+  "first_name": "Maritsa",
+  "last_name": "Shopcott",
+  "email": "mshopcott9@livejournal.com",
+  "gender": "Female",
+  "favorite_color": "Fuscia"
+}, {
+  "id": 11,
+  "first_name": "Ferrel",
+  "last_name": "De Beauchemp",
+  "email": "fdebeauchempa@thetimes.co.uk",
+  "gender": "Male",
+  "favorite_color": "Teal"
+}, {
+  "id": 12,
+  "first_name": "Melloney",
+  "last_name": "Jodrelle",
+  "email": "mjodrelleb@flickr.com",
+  "gender": "Female",
+  "favorite_color": "Crimson"
+}, {
+  "id": 13,
+  "first_name": "Emmerich",
+  "last_name": "Cuttles",
+  "email": "ecuttlesc@ameblo.jp",
+  "gender": "Male",
+  "favorite_color": "Fuscia"
+}, {
+  "id": 14,
+  "first_name": "Zita",
+  "last_name": "Hearl",
+  "email": "zhearld@amazon.co.jp",
+  "gender": "Female",
+  "favorite_color": "Indigo"
+}, {
+  "id": 15,
+  "first_name": "Sadie",
+  "last_name": "Bricklebank",
+  "email": "sbricklebanke@harvard.edu",
+  "gender": "Female",
+  "favorite_color": "Puce"
+}, {
+  "id": 16,
+  "first_name": "Alejandro",
+  "last_name": "Bassom",
+  "email": "abassomf@diigo.com",
+  "gender": "Male",
+  "favorite_color": "Aquamarine"
+}, {
+  "id": 17,
+  "first_name": "Paxon",
+  "last_name": "Dot",
+  "email": "pdotg@usda.gov",
+  "gender": "Male",
+  "favorite_color": "Purple"
+}, {
+  "id": 18,
+  "first_name": "Randie",
+  "last_name": "Blackley",
+  "email": "rblackleyh@biglobe.ne.jp",
+  "gender": "Female",
+  "favorite_color": "Fuscia"
+}, {
+  "id": 19,
+  "first_name": "Barbette",
+  "last_name": "Stolze",
+  "email": "bstolzei@pagesperso-orange.fr",
+  "gender": "Female",
+  "favorite_color": "Violet"
+}, {
+  "id": 20,
+  "first_name": "Petronilla",
+  "last_name": "Huey",
+  "email": "phueyj@webmd.com",
+  "gender": "Female",
+  "favorite_color": "Crimson"
+}, {
+  "id": 21,
+  "first_name": "Haleigh",
+  "last_name": "Greenroa",
+  "email": "hgreenroak@dion.ne.jp",
+  "gender": "Male",
+  "favorite_color": "Indigo"
+}, {
+  "id": 22,
+  "first_name": "Babs",
+  "last_name": "Elgie",
+  "email": "belgiel@vimeo.com",
+  "gender": "Female",
+  "favorite_color": "Yellow"
+}, {
+  "id": 23,
+  "first_name": "Kahlil",
+  "last_name": "Pamphilon",
+  "email": "kpamphilonm@rediff.com",
+  "gender": "Male",
+  "favorite_color": "Maroon"
+}, {
+  "id": 24,
+  "first_name": "Domenico",
+  "last_name": "Anglin",
+  "email": "danglinn@admin.ch",
+  "gender": "Male",
+  "favorite_color": "Pink"
+}, {
+  "id": 25,
+  "first_name": "Ivory",
+  "last_name": "Othick",
+  "email": "iothicko@google.cn",
+  "gender": "Female",
+  "favorite_color": "Fuscia"
+}, {
+  "id": 26,
+  "first_name": "Buddy",
+  "last_name": "Pittet",
+  "email": "bpittetp@mysql.com",
+  "gender": "Male",
+  "favorite_color": "Maroon"
+}, {
+  "id": 27,
+  "first_name": "Lyell",
+  "last_name": "Lensch",
+  "email": "llenschq@amazon.de",
+  "gender": "Male",
+  "favorite_color": "Khaki"
+}, {
+  "id": 28,
+  "first_name": "Flossy",
+  "last_name": "Dowdney",
+  "email": "fdowdneyr@loc.gov",
+  "gender": "Female",
+  "favorite_color": "Indigo"
+}, {
+  "id": 29,
+  "first_name": "Boot",
+  "last_name": "Beert",
+  "email": "bbeerts@army.mil",
+  "gender": "Male",
+  "favorite_color": "Red"
+}, {
+  "id": 30,
+  "first_name": "Addie",
+  "last_name": "Jaqueme",
+  "email": "ajaquemet@mysql.com",
+  "gender": "Male",
+  "favorite_color": "Puce"
+}, {
+  "id": 31,
+  "first_name": "Anatole",
+  "last_name": "Swanson",
+  "email": "aswansonu@theglobeandmail.com",
+  "gender": "Male",
+  "favorite_color": "Fuscia"
+}, {
+  "id": 32,
+  "first_name": "Erskine",
+  "last_name": "Tejero",
+  "email": "etejerov@mapy.cz",
+  "gender": "Male",
+  "favorite_color": "Goldenrod"
+}, {
+  "id": 33,
+  "first_name": "Winny",
+  "last_name": "Paoletti",
+  "email": "wpaolettiw@wiley.com",
+  "gender": "Female",
+  "favorite_color": "Mauv"
+}, {
+  "id": 34,
+  "first_name": "Roseann",
+  "last_name": "Stell",
+  "email": "rstellx@sakura.ne.jp",
+  "gender": "Female",
+  "favorite_color": "Violet"
+}, {
+  "id": 35,
+  "first_name": "Wald",
+  "last_name": "Collop",
+  "email": "wcollopy@tuttocitta.it",
+  "gender": "Male",
+  "favorite_color": "Khaki"
+}, {
+  "id": 36,
+  "first_name": "Terrell",
+  "last_name": "Springthorp",
+  "email": "tspringthorpz@zdnet.com",
+  "gender": "Male",
+  "favorite_color": "Teal"
+}, {
+  "id": 37,
+  "first_name": "Gothart",
+  "last_name": "Casper",
+  "email": "gcasper10@foxnews.com",
+  "gender": "Male",
+  "favorite_color": "Yellow"
+}, {
+  "id": 38,
+  "first_name": "Gillie",
+  "last_name": "Osgar",
+  "email": "gosgar11@sciencedaily.com",
+  "gender": "Female",
+  "favorite_color": "Pink"
+}, {
+  "id": 39,
+  "first_name": "Fredia",
+  "last_name": "Ormond",
+  "email": "formond12@purevolume.com",
+  "gender": "Female",
+  "favorite_color": "Khaki"
+}, {
+  "id": 40,
+  "first_name": "Charlton",
+  "last_name": "Sedwick",
+  "email": "csedwick13@jimdo.com",
+  "gender": "Male",
+  "favorite_color": "Khaki"
+}, {
+  "id": 41,
+  "first_name": "Desirae",
+  "last_name": "Heading",
+  "email": "dheading14@blogspot.com",
+  "gender": "Female",
+  "favorite_color": "Goldenrod"
+}, {
+  "id": 42,
+  "first_name": "Dougy",
+  "last_name": "Geaney",
+  "email": "dgeaney15@flavors.me",
+  "gender": "Male",
+  "favorite_color": "Violet"
+}, {
+  "id": 43,
+  "first_name": "Tobe",
+  "last_name": "Crehan",
+  "email": "tcrehan16@ycombinator.com",
+  "gender": "Female",
+  "favorite_color": "Green"
+}, {
+  "id": 44,
+  "first_name": "Roxanna",
+  "last_name": "Palfery",
+  "email": "rpalfery17@clickbank.net",
+  "gender": "Female",
+  "favorite_color": "Aquamarine"
+}, {
+  "id": 45,
+  "first_name": "Guillermo",
+  "last_name": "Sirr",
+  "email": "gsirr18@biglobe.ne.jp",
+  "gender": "Male",
+  "favorite_color": "Orange"
+}, {
+  "id": 46,
+  "first_name": "Chrisy",
+  "last_name": "Hevner",
+  "email": "chevner19@state.gov",
+  "gender": "Male",
+  "favorite_color": "Maroon"
+}, {
+  "id": 47,
+  "first_name": "Sharona",
+  "last_name": "Lurner",
+  "email": "slurner1a@time.com",
+  "gender": "Female",
+  "favorite_color": "Purple"
+}, {
+  "id": 48,
+  "first_name": "Clement",
+  "last_name": "Axup",
+  "email": "caxup1b@jugem.jp",
+  "gender": "Male",
+  "favorite_color": "Puce"
+}, {
+  "id": 49,
+  "first_name": "Ruddie",
+  "last_name": "McMichell",
+  "email": "rmcmichell1c@creativecommons.org",
+  "gender": "Male",
+  "favorite_color": "Maroon"
+}, {
+  "id": 50,
+  "first_name": "Rozelle",
+  "last_name": "Keal",
+  "email": "rkeal1d@acquirethisname.com",
+  "gender": "Female",
+  "favorite_color": "Pink"
+}, {
+  "id": 51,
+  "first_name": "Issiah",
+  "last_name": "Keelin",
+  "email": "ikeelin1e@elpais.com",
+  "gender": "Male",
+  "favorite_color": "Yellow"
+}, {
+  "id": 52,
+  "first_name": "Ludvig",
+  "last_name": "Spacey",
+  "email": "lspacey1f@xinhuanet.com",
+  "gender": "Male",
+  "favorite_color": "Purple"
+}, {
+  "id": 53,
+  "first_name": "Flory",
+  "last_name": "Stronghill",
+  "email": "fstronghill1g@uol.com.br",
+  "gender": "Male",
+  "favorite_color": "Blue"
+}, {
+  "id": 54,
+  "first_name": "Arie",
+  "last_name": "Grigor",
+  "email": "agrigor1h@mapquest.com",
+  "gender": "Male",
+  "favorite_color": "Crimson"
+}, {
+  "id": 55,
+  "first_name": "Jennica",
+  "last_name": "Loggie",
+  "email": "jloggie1i@soup.io",
+  "gender": "Female",
+  "favorite_color": "Violet"
+}, {
+  "id": 56,
+  "first_name": "Alyss",
+  "last_name": "Garahan",
+  "email": "agarahan1j@latimes.com",
+  "gender": "Female",
+  "favorite_color": "Khaki"
+}, {
+  "id": 57,
+  "first_name": "Zabrina",
+  "last_name": "Knevit",
+  "email": "zknevit1k@fastcompany.com",
+  "gender": "Female",
+  "favorite_color": "Green"
+}, {
+  "id": 58,
+  "first_name": "Baxter",
+  "last_name": "Digan",
+  "email": "bdigan1l@epa.gov",
+  "gender": "Male",
+  "favorite_color": "Aquamarine"
+}, {
+  "id": 59,
+  "first_name": "Glyn",
+  "last_name": "Woolerton",
+  "email": "gwoolerton1m@eventbrite.com",
+  "gender": "Male",
+  "favorite_color": "Orange"
+}, {
+  "id": 60,
+  "first_name": "Eugenius",
+  "last_name": "Pelosi",
+  "email": "epelosi1n@telegraph.co.uk",
+  "gender": "Male",
+  "favorite_color": "Indigo"
+}, {
+  "id": 61,
+  "first_name": "Drew",
+  "last_name": "Bampfield",
+  "email": "dbampfield1o@etsy.com",
+  "gender": "Male",
+  "favorite_color": "Red"
+}, {
+  "id": 62,
+  "first_name": "Tully",
+  "last_name": "Rosiello",
+  "email": "trosiello1p@163.com",
+  "gender": "Male",
+  "favorite_color": "Fuscia"
+}, {
+  "id": 63,
+  "first_name": "Patton",
+  "last_name": "Wallbridge",
+  "email": "pwallbridge1q@marriott.com",
+  "gender": "Male",
+  "favorite_color": "Aquamarine"
+}, {
+  "id": 64,
+  "first_name": "Correy",
+  "last_name": "Webster",
+  "email": "cwebster1r@shareasale.com",
+  "gender": "Male",
+  "favorite_color": "Green"
+}, {
+  "id": 65,
+  "first_name": "Kass",
+  "last_name": "Mockett",
+  "email": "kmockett1s@wordpress.com",
+  "gender": "Female",
+  "favorite_color": "Crimson"
+}, {
+  "id": 66,
+  "first_name": "Pandora",
+  "last_name": "Morilla",
+  "email": "pmorilla1t@homestead.com",
+  "gender": "Female",
+  "favorite_color": "Orange"
+}, {
+  "id": 67,
+  "first_name": "Ashbey",
+  "last_name": "Burdge",
+  "email": "aburdge1u@ebay.co.uk",
+  "gender": "Male",
+  "favorite_color": "Yellow"
+}, {
+  "id": 68,
+  "first_name": "Bryce",
+  "last_name": "Reveland",
+  "email": "breveland1v@tripod.com",
+  "gender": "Male",
+  "favorite_color": "Indigo"
+}, {
+  "id": 69,
+  "first_name": "Nicolai",
+  "last_name": "Fenich",
+  "email": "nfenich1w@quantcast.com",
+  "gender": "Male",
+  "favorite_color": "Green"
+}, {
+  "id": 70,
+  "first_name": "Orbadiah",
+  "last_name": "Karpinski",
+  "email": "okarpinski1x@nature.com",
+  "gender": "Male",
+  "favorite_color": "Green"
+}, {
+  "id": 71,
+  "first_name": "Theodor",
+  "last_name": "Yakunin",
+  "email": "tyakunin1y@discuz.net",
+  "gender": "Male",
+  "favorite_color": "Aquamarine"
+}, {
+  "id": 72,
+  "first_name": "Emilie",
+  "last_name": "Juzek",
+  "email": "ejuzek1z@comcast.net",
+  "gender": "Female",
+  "favorite_color": "Maroon"
+}, {
+  "id": 73,
+  "first_name": "Putnem",
+  "last_name": "Waterhowse",
+  "email": "pwaterhowse20@disqus.com",
+  "gender": "Male",
+  "favorite_color": "Red"
+}, {
+  "id": 74,
+  "first_name": "Lonny",
+  "last_name": "Dimmack",
+  "email": "ldimmack21@netvibes.com",
+  "gender": "Male",
+  "favorite_color": "Blue"
+}, {
+  "id": 75,
+  "first_name": "Gil",
+  "last_name": "Hiom",
+  "email": "ghiom22@hud.gov",
+  "gender": "Male",
+  "favorite_color": "Purple"
+}, {
+  "id": 76,
+  "first_name": "Shane",
+  "last_name": "Redon",
+  "email": "sredon23@privacy.gov.au",
+  "gender": "Male",
+  "favorite_color": "Indigo"
+}, {
+  "id": 77,
+  "first_name": "Gabi",
+  "last_name": "Bauckham",
+  "email": "gbauckham24@mediafire.com",
+  "gender": "Male",
+  "favorite_color": "Indigo"
+}, {
+  "id": 78,
+  "first_name": "Trefor",
+  "last_name": "Gabites",
+  "email": "tgabites25@howstuffworks.com",
+  "gender": "Male",
+  "favorite_color": "Teal"
+}, {
+  "id": 79,
+  "first_name": "Inger",
+  "last_name": "Orteu",
+  "email": "iorteu26@wordpress.com",
+  "gender": "Male",
+  "favorite_color": "Mauv"
+}, {
+  "id": 80,
+  "first_name": "Sophronia",
+  "last_name": "Teece",
+  "email": "steece27@creativecommons.org",
+  "gender": "Female",
+  "favorite_color": "Puce"
+}, {
+  "id": 81,
+  "first_name": "Conrado",
+  "last_name": "Lehrian",
+  "email": "clehrian28@over-blog.com",
+  "gender": "Male",
+  "favorite_color": "Crimson"
+}, {
+  "id": 82,
+  "first_name": "Ebony",
+  "last_name": "Jerg",
+  "email": "ejerg29@amazonaws.com",
+  "gender": "Female",
+  "favorite_color": "Red"
+}, {
+  "id": 83,
+  "first_name": "Mikaela",
+  "last_name": "Adamiec",
+  "email": "madamiec2a@tuttocitta.it",
+  "gender": "Female",
+  "favorite_color": "Pink"
+}, {
+  "id": 84,
+  "first_name": "Arnold",
+  "last_name": "Rowsell",
+  "email": "arowsell2b@hexun.com",
+  "gender": "Male",
+  "favorite_color": "Orange"
+}, {
+  "id": 85,
+  "first_name": "Bree",
+  "last_name": "Klosa",
+  "email": "bklosa2c@census.gov",
+  "gender": "Female",
+  "favorite_color": "Puce"
+}, {
+  "id": 86,
+  "first_name": "Daffy",
+  "last_name": "Clewarth",
+  "email": "dclewarth2d@seattletimes.com",
+  "gender": "Female",
+  "favorite_color": "Puce"
+}, {
+  "id": 87,
+  "first_name": "Michele",
+  "last_name": "Piele",
+  "email": "mpiele2e@ezinearticles.com",
+  "gender": "Female",
+  "favorite_color": "Teal"
+}, {
+  "id": 88,
+  "first_name": "Rebecca",
+  "last_name": "Whitehorn",
+  "email": "rwhitehorn2f@imageshack.us",
+  "gender": "Female",
+  "favorite_color": "Pink"
+}, {
+  "id": 89,
+  "first_name": "Corinne",
+  "last_name": "Carthew",
+  "email": "ccarthew2g@parallels.com",
+  "gender": "Female",
+  "favorite_color": "Pink"
+}, {
+  "id": 90,
+  "first_name": "Alix",
+  "last_name": "Van den Oord",
+  "email": "avandenoord2h@fda.gov",
+  "gender": "Female",
+  "favorite_color": "Green"
+}, {
+  "id": 91,
+  "first_name": "Petronella",
+  "last_name": "Casson",
+  "email": "pcasson2i@newsvine.com",
+  "gender": "Female",
+  "favorite_color": "Maroon"
+}, {
+  "id": 92,
+  "first_name": "Ulises",
+  "last_name": "Noury",
+  "email": "unoury2j@fc2.com",
+  "gender": "Male",
+  "favorite_color": "Green"
+}, {
+  "id": 93,
+  "first_name": "Patten",
+  "last_name": "Nisco",
+  "email": "pnisco2k@reddit.com",
+  "gender": "Male",
+  "favorite_color": "Puce"
+}, {
+  "id": 94,
+  "first_name": "Pablo",
+  "last_name": "Biscomb",
+  "email": "pbiscomb2l@amazon.com",
+  "gender": "Male",
+  "favorite_color": "Red"
+}, {
+  "id": 95,
+  "first_name": "Loree",
+  "last_name": "Turk",
+  "email": "lturk2m@hugedomains.com",
+  "gender": "Female",
+  "favorite_color": "Maroon"
+}, {
+  "id": 96,
+  "first_name": "Caesar",
+  "last_name": "Standall",
+  "email": "cstandall2n@nih.gov",
+  "gender": "Male",
+  "favorite_color": "Violet"
+}, {
+  "id": 97,
+  "first_name": "Claribel",
+  "last_name": "Skein",
+  "email": "cskein2o@oracle.com",
+  "gender": "Female",
+  "favorite_color": "Crimson"
+}, {
+  "id": 98,
+  "first_name": "Marla",
+  "last_name": "Swanborrow",
+  "email": "mswanborrow2p@skype.com",
+  "gender": "Female",
+  "favorite_color": "Purple"
+}, {
+  "id": 99,
+  "first_name": "Phineas",
+  "last_name": "Brandes",
+  "email": "pbrandes2q@elpais.com",
+  "gender": "Male",
+  "favorite_color": "Purple"
+}, {
+  "id": 100,
+  "first_name": "Norby",
+  "last_name": "Prall",
+  "email": "nprall2r@pen.io",
+  "gender": "Male",
+  "favorite_color": "Fuscia"
+}]</pre>
+        </div>
+        <div>
+            <h2>Data to input (var 2)</h2>
+            <pre>[{
+  "id": 1,
+  "first_name": "Jereme",
+  "last_name": "Brunet",
+  "email": "jbrunet0@uiuc.edu",
+  "gender": "Male",
+  "favorite_color": "Mauv"
+}, {
+  "id": 2,
+  "first_name": "Charley",
+  "last_name": "Glasser",
+  "email": "cglasser1@tripadvisor.com",
+  "gender": "Male",
+  "favorite_color": "Yellow"
+}, {
+  "id": 3,
+  "first_name": "Blake",
+  "last_name": "O'Feeny",
+  "email": "bofeeny2@princeton.edu",
+  "gender": "Female",
+  "favorite_color": "Goldenrod"
+}, {
+  "id": 4,
+  "first_name": "Wat",
+  "last_name": "Colebourn",
+  "email": "wcolebourn3@t-online.de",
+  "gender": "Male",
+  "favorite_color": "Puce"
+}, {
+  "id": 5,
+  "first_name": "Charles",
+  "last_name": "Carabine",
+  "email": "ccarabine4@ebay.com",
+  "gender": "Male",
+  "favorite_color": "Puce"
+}, {
+  "id": 6,
+  "first_name": "Bastien",
+  "last_name": "Jasik",
+  "email": "bjasik5@topsy.com",
+  "gender": "Male",
+  "favorite_color": "Yellow"
+}, {
+  "id": 7,
+  "first_name": "Edlin",
+  "last_name": "Kittel",
+  "email": "ekittel6@yandex.ru",
+  "gender": "Male",
+  "favorite_color": "Crimson"
+}, {
+  "id": 8,
+  "first_name": "Ignace",
+  "last_name": "Itzhaiek",
+  "email": "iitzhaiek7@virginia.edu",
+  "gender": "Male",
+  "favorite_color": "Violet"
+}, {
+  "id": 9,
+  "first_name": "Padraig",
+  "last_name": "Feldbau",
+  "email": "pfeldbau8@yelp.com",
+  "gender": "Male",
+  "favorite_color": "Aquamarine"
+}, {
+  "id": 10,
+  "first_name": "Norean",
+  "last_name": "Mateescu",
+  "email": "nmateescu9@ft.com",
+  "gender": "Female",
+  "favorite_color": "Teal"
+}, {
+  "id": 11,
+  "first_name": "Boone",
+  "last_name": "Sagg",
+  "email": "bsagga@icq.com",
+  "gender": "Male",
+  "favorite_color": "Yellow"
+}, {
+  "id": 12,
+  "first_name": "Doe",
+  "last_name": "Feldmann",
+  "email": "dfeldmannb@earthlink.net",
+  "gender": "Female",
+  "favorite_color": "Violet"
+}, {
+  "id": 13,
+  "first_name": "Peirce",
+  "last_name": "Oloman",
+  "email": "polomanc@seesaa.net",
+  "gender": "Male",
+  "favorite_color": "Aquamarine"
+}, {
+  "id": 14,
+  "first_name": "Aline",
+  "last_name": "Kyffin",
+  "email": "akyffind@cdc.gov",
+  "gender": "Female",
+  "favorite_color": "Mauv"
+}, {
+  "id": 15,
+  "first_name": "Linn",
+  "last_name": "Silly",
+  "email": "lsillye@gravatar.com",
+  "gender": "Female",
+  "favorite_color": "Purple"
+}, {
+  "id": 16,
+  "first_name": "Fredric",
+  "last_name": "Hulatt",
+  "email": "fhulattf@microsoft.com",
+  "gender": "Male",
+  "favorite_color": "Maroon"
+}, {
+  "id": 17,
+  "first_name": "Hildegarde",
+  "last_name": "Rickwood",
+  "email": "hrickwoodg@shop-pro.jp",
+  "gender": "Female",
+  "favorite_color": "Maroon"
+}, {
+  "id": 18,
+  "first_name": "Heidi",
+  "last_name": "Rennels",
+  "email": "hrennelsh@wisc.edu",
+  "gender": "Female",
+  "favorite_color": "Teal"
+}, {
+  "id": 19,
+  "first_name": "Dulcea",
+  "last_name": "Kevern",
+  "email": "dkeverni@icq.com",
+  "gender": "Female",
+  "favorite_color": "Teal"
+}, {
+  "id": 20,
+  "first_name": "Angelina",
+  "last_name": "Wannes",
+  "email": "awannesj@vinaora.com",
+  "gender": "Female",
+  "favorite_color": "Yellow"
+}, {
+  "id": 21,
+  "first_name": "Avrom",
+  "last_name": "Alvar",
+  "email": "aalvark@fda.gov",
+  "gender": "Male",
+  "favorite_color": "Blue"
+}, {
+  "id": 22,
+  "first_name": "Cele",
+  "last_name": "Duffin",
+  "email": "cduffinl@nature.com",
+  "gender": "Female",
+  "favorite_color": "Teal"
+}, {
+  "id": 23,
+  "first_name": "Eadie",
+  "last_name": "Biaggioli",
+  "email": "ebiaggiolim@google.nl",
+  "gender": "Female",
+  "favorite_color": "Puce"
+}, {
+  "id": 24,
+  "first_name": "Kirsti",
+  "last_name": "Steddall",
+  "email": "ksteddalln@blogs.com",
+  "gender": "Female",
+  "favorite_color": "Puce"
+}, {
+  "id": 25,
+  "first_name": "Durward",
+  "last_name": "Lahive",
+  "email": "dlahiveo@webmd.com",
+  "gender": "Male",
+  "favorite_color": "Maroon"
+}, {
+  "id": 26,
+  "first_name": "Binny",
+  "last_name": "Saldler",
+  "email": "bsaldlerp@sbwire.com",
+  "gender": "Female",
+  "favorite_color": "Khaki"
+}, {
+  "id": 27,
+  "first_name": "Fraser",
+  "last_name": "Fishpond",
+  "email": "ffishpondq@patch.com",
+  "gender": "Male",
+  "favorite_color": "Pink"
+}, {
+  "id": 28,
+  "first_name": "Keelia",
+  "last_name": "Alderman",
+  "email": "kaldermanr@tripadvisor.com",
+  "gender": "Female",
+  "favorite_color": "Turquoise"
+}, {
+  "id": 29,
+  "first_name": "Panchito",
+  "last_name": "Zecchii",
+  "email": "pzecchiis@jiathis.com",
+  "gender": "Male",
+  "favorite_color": "Goldenrod"
+}, {
+  "id": 30,
+  "first_name": "Patin",
+  "last_name": "Minter",
+  "email": "pmintert@t-online.de",
+  "gender": "Male",
+  "favorite_color": "Aquamarine"
+}, {
+  "id": 31,
+  "first_name": "Griffin",
+  "last_name": "Size",
+  "email": "gsizeu@1688.com",
+  "gender": "Male",
+  "favorite_color": "Purple"
+}, {
+  "id": 32,
+  "first_name": "Dougy",
+  "last_name": "Skokoe",
+  "email": "dskokoev@netlog.com",
+  "gender": "Male",
+  "favorite_color": "Fuscia"
+}, {
+  "id": 33,
+  "first_name": "Dulce",
+  "last_name": "Hollindale",
+  "email": "dhollindalew@sina.com.cn",
+  "gender": "Female",
+  "favorite_color": "Crimson"
+}, {
+  "id": 34,
+  "first_name": "Norbie",
+  "last_name": "Adran",
+  "email": "nadranx@usgs.gov",
+  "gender": "Male",
+  "favorite_color": "Red"
+}, {
+  "id": 35,
+  "first_name": "Breanne",
+  "last_name": "MacPeice",
+  "email": "bmacpeicey@deviantart.com",
+  "gender": "Female",
+  "favorite_color": "Puce"
+}, {
+  "id": 36,
+  "first_name": "Glennis",
+  "last_name": "Stutt",
+  "email": "gstuttz@vk.com",
+  "gender": "Female",
+  "favorite_color": "Pink"
+}, {
+  "id": 37,
+  "first_name": "Gray",
+  "last_name": "Murby",
+  "email": "gmurby10@dailymail.co.uk",
+  "gender": "Female",
+  "favorite_color": "Purple"
+}, {
+  "id": 38,
+  "first_name": "Rosita",
+  "last_name": "Szubert",
+  "email": "rszubert11@github.com",
+  "gender": "Female",
+  "favorite_color": "Violet"
+}, {
+  "id": 39,
+  "first_name": "Wallie",
+  "last_name": "Castelin",
+  "email": "wcastelin12@amazon.com",
+  "gender": "Female",
+  "favorite_color": "Maroon"
+}, {
+  "id": 40,
+  "first_name": "Carine",
+  "last_name": "Stables",
+  "email": "cstables13@elpais.com",
+  "gender": "Female",
+  "favorite_color": "Pink"
+}, {
+  "id": 41,
+  "first_name": "Leroy",
+  "last_name": "Beslier",
+  "email": "lbeslier14@qq.com",
+  "gender": "Male",
+  "favorite_color": "Goldenrod"
+}, {
+  "id": 42,
+  "first_name": "Ludwig",
+  "last_name": "Crothers",
+  "email": "lcrothers15@usa.gov",
+  "gender": "Male",
+  "favorite_color": "Indigo"
+}, {
+  "id": 43,
+  "first_name": "Jefferey",
+  "last_name": "Tebbett",
+  "email": "jtebbett16@chicagotribune.com",
+  "gender": "Male",
+  "favorite_color": "Purple"
+}, {
+  "id": 44,
+  "first_name": "Tamarah",
+  "last_name": "Vakhlov",
+  "email": "tvakhlov17@spiegel.de",
+  "gender": "Female",
+  "favorite_color": "Maroon"
+}, {
+  "id": 45,
+  "first_name": "Brear",
+  "last_name": "Bibby",
+  "email": "bbibby18@opensource.org",
+  "gender": "Female",
+  "favorite_color": "Maroon"
+}, {
+  "id": 46,
+  "first_name": "Grace",
+  "last_name": "McGeneay",
+  "email": "gmcgeneay19@omniture.com",
+  "gender": "Male",
+  "favorite_color": "Goldenrod"
+}, {
+  "id": 47,
+  "first_name": "Seth",
+  "last_name": "Lydiard",
+  "email": "slydiard1a@nationalgeographic.com",
+  "gender": "Male",
+  "favorite_color": "Indigo"
+}, {
+  "id": 48,
+  "first_name": "Jolie",
+  "last_name": "Pridmore",
+  "email": "jpridmore1b@facebook.com",
+  "gender": "Female",
+  "favorite_color": "Purple"
+}, {
+  "id": 49,
+  "first_name": "Cordie",
+  "last_name": "Brisseau",
+  "email": "cbrisseau1c@ocn.ne.jp",
+  "gender": "Female",
+  "favorite_color": "Goldenrod"
+}, {
+  "id": 50,
+  "first_name": "Rowan",
+  "last_name": "McCromley",
+  "email": "rmccromley1d@go.com",
+  "gender": "Male",
+  "favorite_color": "Fuscia"
+}, {
+  "id": 51,
+  "first_name": "Konstantin",
+  "last_name": "Mc Gorley",
+  "email": "kmcgorley1e@time.com",
+  "gender": "Male",
+  "favorite_color": "Red"
+}, {
+  "id": 52,
+  "first_name": "Leroy",
+  "last_name": "Salle",
+  "email": "lsalle1f@ed.gov",
+  "gender": "Male",
+  "favorite_color": "Mauv"
+}, {
+  "id": 53,
+  "first_name": "Georgy",
+  "last_name": "Fant",
+  "email": "gfant1g@nbcnews.com",
+  "gender": "Male",
+  "favorite_color": "Red"
+}, {
+  "id": 54,
+  "first_name": "Oriana",
+  "last_name": "Menendez",
+  "email": "omenendez1h@1und1.de",
+  "gender": "Female",
+  "favorite_color": "Puce"
+}, {
+  "id": 55,
+  "first_name": "Lennard",
+  "last_name": "Plumm",
+  "email": "lplumm1i@unicef.org",
+  "gender": "Male",
+  "favorite_color": "Mauv"
+}, {
+  "id": 56,
+  "first_name": "Milka",
+  "last_name": "Shakeshaft",
+  "email": "mshakeshaft1j@psu.edu",
+  "gender": "Female",
+  "favorite_color": "Maroon"
+}, {
+  "id": 57,
+  "first_name": "Luke",
+  "last_name": "Akess",
+  "email": "lakess1k@nsw.gov.au",
+  "gender": "Male",
+  "favorite_color": "Violet"
+}, {
+  "id": 58,
+  "first_name": "Malvin",
+  "last_name": "Pymm",
+  "email": "mpymm1l@xing.com",
+  "gender": "Male",
+  "favorite_color": "Crimson"
+}, {
+  "id": 59,
+  "first_name": "Mikel",
+  "last_name": "Fancett",
+  "email": "mfancett1m@jimdo.com",
+  "gender": "Male",
+  "favorite_color": "Aquamarine"
+}, {
+  "id": 60,
+  "first_name": "Odella",
+  "last_name": "Manginot",
+  "email": "omanginot1n@prnewswire.com",
+  "gender": "Female",
+  "favorite_color": "Turquoise"
+}, {
+  "id": 61,
+  "first_name": "Silvio",
+  "last_name": "Cinnamond",
+  "email": "scinnamond1o@google.fr",
+  "gender": "Male",
+  "favorite_color": "Teal"
+}, {
+  "id": 62,
+  "first_name": "Pieter",
+  "last_name": "Muncie",
+  "email": "pmuncie1p@surveymonkey.com",
+  "gender": "Male",
+  "favorite_color": "Teal"
+}, {
+  "id": 63,
+  "first_name": "Berkie",
+  "last_name": "McGooch",
+  "email": "bmcgooch1q@desdev.cn",
+  "gender": "Male",
+  "favorite_color": "Goldenrod"
+}, {
+  "id": 64,
+  "first_name": "Ninette",
+  "last_name": "de Clerk",
+  "email": "ndeclerk1r@addthis.com",
+  "gender": "Female",
+  "favorite_color": "Red"
+}, {
+  "id": 65,
+  "first_name": "Sharai",
+  "last_name": "Pepperill",
+  "email": "spepperill1s@deviantart.com",
+  "gender": "Female",
+  "favorite_color": "Fuscia"
+}, {
+  "id": 66,
+  "first_name": "Jany",
+  "last_name": "Pedwell",
+  "email": "jpedwell1t@wp.com",
+  "gender": "Female",
+  "favorite_color": "Pink"
+}, {
+  "id": 67,
+  "first_name": "Ely",
+  "last_name": "Ludlam",
+  "email": "eludlam1u@nifty.com",
+  "gender": "Male",
+  "favorite_color": "Khaki"
+}, {
+  "id": 68,
+  "first_name": "Cleavland",
+  "last_name": "Stollenhof",
+  "email": "cstollenhof1v@jalbum.net",
+  "gender": "Male",
+  "favorite_color": "Teal"
+}, {
+  "id": 69,
+  "first_name": "Marjy",
+  "last_name": "Standering",
+  "email": "mstandering1w@google.it",
+  "gender": "Female",
+  "favorite_color": "Pink"
+}, {
+  "id": 70,
+  "first_name": "Tammara",
+  "last_name": "Antonoyev",
+  "email": "tantonoyev1x@bigcartel.com",
+  "gender": "Female",
+  "favorite_color": "Turquoise"
+}, {
+  "id": 71,
+  "first_name": "Minnaminnie",
+  "last_name": "Murname",
+  "email": "mmurname1y@creativecommons.org",
+  "gender": "Female",
+  "favorite_color": "Teal"
+}, {
+  "id": 72,
+  "first_name": "Nobe",
+  "last_name": "Hardacre",
+  "email": "nhardacre1z@cbc.ca",
+  "gender": "Male",
+  "favorite_color": "Maroon"
+}, {
+  "id": 73,
+  "first_name": "Willey",
+  "last_name": "Bamfield",
+  "email": "wbamfield20@eepurl.com",
+  "gender": "Male",
+  "favorite_color": "Turquoise"
+}, {
+  "id": 74,
+  "first_name": "Anabal",
+  "last_name": "Willmont",
+  "email": "awillmont21@archive.org",
+  "gender": "Female",
+  "favorite_color": "Red"
+}, {
+  "id": 75,
+  "first_name": "Valentijn",
+  "last_name": "Skehens",
+  "email": "vskehens22@wp.com",
+  "gender": "Male",
+  "favorite_color": "Aquamarine"
+}, {
+  "id": 76,
+  "first_name": "Maxim",
+  "last_name": "Threadgold",
+  "email": "mthreadgold23@yolasite.com",
+  "gender": "Male",
+  "favorite_color": "Maroon"
+}, {
+  "id": 77,
+  "first_name": "Fanni",
+  "last_name": "Patington",
+  "email": "fpatington24@wiley.com",
+  "gender": "Female",
+  "favorite_color": "Fuscia"
+}, {
+  "id": 78,
+  "first_name": "Winna",
+  "last_name": "Eynald",
+  "email": "weynald25@gizmodo.com",
+  "gender": "Female",
+  "favorite_color": "Red"
+}, {
+  "id": 79,
+  "first_name": "Adah",
+  "last_name": "Casin",
+  "email": "acasin26@sun.com",
+  "gender": "Female",
+  "favorite_color": "Aquamarine"
+}, {
+  "id": 80,
+  "first_name": "Conan",
+  "last_name": "Cogzell",
+  "email": "ccogzell27@mozilla.com",
+  "gender": "Male",
+  "favorite_color": "Orange"
+}, {
+  "id": 81,
+  "first_name": "Donica",
+  "last_name": "Colter",
+  "email": "dcolter28@odnoklassniki.ru",
+  "gender": "Female",
+  "favorite_color": "Green"
+}, {
+  "id": 82,
+  "first_name": "Alyss",
+  "last_name": "Atmore",
+  "email": "aatmore29@theguardian.com",
+  "gender": "Female",
+  "favorite_color": "Turquoise"
+}, {
+  "id": 83,
+  "first_name": "Atlanta",
+  "last_name": "Pyper",
+  "email": "apyper2a@amazon.com",
+  "gender": "Female",
+  "favorite_color": "Orange"
+}, {
+  "id": 84,
+  "first_name": "Rochelle",
+  "last_name": "Brunone",
+  "email": "rbrunone2b@who.int",
+  "gender": "Female",
+  "favorite_color": "Orange"
+}, {
+  "id": 85,
+  "first_name": "Lane",
+  "last_name": "Petrasso",
+  "email": "lpetrasso2c@gmpg.org",
+  "gender": "Male",
+  "favorite_color": "Pink"
+}, {
+  "id": 86,
+  "first_name": "Lilas",
+  "last_name": "Ferrara",
+  "email": "lferrara2d@vistaprint.com",
+  "gender": "Female",
+  "favorite_color": "Turquoise"
+}, {
+  "id": 87,
+  "first_name": "Allyce",
+  "last_name": "Mushett",
+  "email": "amushett2e@va.gov",
+  "gender": "Female",
+  "favorite_color": "Blue"
+}, {
+  "id": 88,
+  "first_name": "Arel",
+  "last_name": "Mora",
+  "email": "amora2f@scientificamerican.com",
+  "gender": "Male",
+  "favorite_color": "Maroon"
+}, {
+  "id": 89,
+  "first_name": "Brice",
+  "last_name": "Nevison",
+  "email": "bnevison2g@sun.com",
+  "gender": "Male",
+  "favorite_color": "Green"
+}, {
+  "id": 90,
+  "first_name": "Barris",
+  "last_name": "Carncross",
+  "email": "bcarncross2h@goo.ne.jp",
+  "gender": "Male",
+  "favorite_color": "Goldenrod"
+}, {
+  "id": 91,
+  "first_name": "Issi",
+  "last_name": "Dudin",
+  "email": "idudin2i@mapy.cz",
+  "gender": "Female",
+  "favorite_color": "Blue"
+}, {
+  "id": 92,
+  "first_name": "Lulu",
+  "last_name": "Blankett",
+  "email": "lblankett2j@spotify.com",
+  "gender": "Female",
+  "favorite_color": "Khaki"
+}, {
+  "id": 93,
+  "first_name": "Sarah",
+  "last_name": "Goodayle",
+  "email": "sgoodayle2k@marketwatch.com",
+  "gender": "Female",
+  "favorite_color": "Aquamarine"
+}, {
+  "id": 94,
+  "first_name": "Even",
+  "last_name": "Ioan",
+  "email": "eioan2l@economist.com",
+  "gender": "Male",
+  "favorite_color": "Yellow"
+}, {
+  "id": 95,
+  "first_name": "Brigid",
+  "last_name": "Vizard",
+  "email": "bvizard2m@gnu.org",
+  "gender": "Female",
+  "favorite_color": "Violet"
+}, {
+  "id": 96,
+  "first_name": "Fredra",
+  "last_name": "Grieg",
+  "email": "fgrieg2n@photobucket.com",
+  "gender": "Female",
+  "favorite_color": "Khaki"
+}, {
+  "id": 97,
+  "first_name": "Erie",
+  "last_name": "Kegley",
+  "email": "ekegley2o@geocities.jp",
+  "gender": "Male",
+  "favorite_color": "Purple"
+}, {
+  "id": 98,
+  "first_name": "Dredi",
+  "last_name": "Flury",
+  "email": "dflury2p@epa.gov",
+  "gender": "Female",
+  "favorite_color": "Goldenrod"
+}, {
+  "id": 99,
+  "first_name": "Brendon",
+  "last_name": "Mannering",
+  "email": "bmannering2q@gizmodo.com",
+  "gender": "Male",
+  "favorite_color": "Violet"
+}, {
+  "id": 100,
+  "first_name": "Earl",
+  "last_name": "Jerger",
+  "email": "ejerger2r@php.net",
+  "gender": "Male",
+  "favorite_color": "Violet"
+}]</pre>
+        </div>
+        <div>
+            <h2>Data to input(var 3)</h2>
+            <pre>[{
+  "id": 1,
+  "first_name": "Trisha",
+  "last_name": "De Dei",
+  "email": "tdedei0@merriam-webster.com",
+  "gender": "Female",
+  "favorite_color": "Orange"
+}, {
+  "id": 2,
+  "first_name": "Ann",
+  "last_name": "Alberts",
+  "email": "aalberts1@technorati.com",
+  "gender": "Female",
+  "favorite_color": "Goldenrod"
+}, {
+  "id": 3,
+  "first_name": "Evvy",
+  "last_name": "Jozefczak",
+  "email": "ejozefczak2@marriott.com",
+  "gender": "Female",
+  "favorite_color": "Orange"
+}, {
+  "id": 4,
+  "first_name": "Erica",
+  "last_name": "Dutson",
+  "email": "edutson3@homestead.com",
+  "gender": "Female",
+  "favorite_color": "Blue"
+}, {
+  "id": 5,
+  "first_name": "Aubrey",
+  "last_name": "O'Kenny",
+  "email": "aokenny4@cocolog-nifty.com",
+  "gender": "Female",
+  "favorite_color": "Green"
+}, {
+  "id": 6,
+  "first_name": "Briny",
+  "last_name": "Reuben",
+  "email": "breuben5@webeden.co.uk",
+  "gender": "Female",
+  "favorite_color": "Aquamarine"
+}, {
+  "id": 7,
+  "first_name": "Nonie",
+  "last_name": "Speddin",
+  "email": "nspeddin6@typepad.com",
+  "gender": "Female",
+  "favorite_color": "Crimson"
+}, {
+  "id": 8,
+  "first_name": "Jodi",
+  "last_name": "Brunn",
+  "email": "jbrunn7@reuters.com",
+  "gender": "Female",
+  "favorite_color": "Purple"
+}, {
+  "id": 9,
+  "first_name": "Mozelle",
+  "last_name": "Bossel",
+  "email": "mbossel8@independent.co.uk",
+  "gender": "Female",
+  "favorite_color": "Turquoise"
+}, {
+  "id": 10,
+  "first_name": "Eustacia",
+  "last_name": "Kingerby",
+  "email": "ekingerby9@ftc.gov",
+  "gender": "Female",
+  "favorite_color": "Crimson"
+}, {
+  "id": 11,
+  "first_name": "Kesley",
+  "last_name": "Lyttle",
+  "email": "klyttlea@japanpost.jp",
+  "gender": "Female",
+  "favorite_color": "Red"
+}, {
+  "id": 12,
+  "first_name": "Abner",
+  "last_name": "Huyhton",
+  "email": "ahuyhtonb@netvibes.com",
+  "gender": "Male",
+  "favorite_color": "Yellow"
+}, {
+  "id": 13,
+  "first_name": "Nancey",
+  "last_name": "Burkart",
+  "email": "nburkartc@nba.com",
+  "gender": "Female",
+  "favorite_color": "Puce"
+}, {
+  "id": 14,
+  "first_name": "Jehu",
+  "last_name": "Lakey",
+  "email": "jlakeyd@youtu.be",
+  "gender": "Male",
+  "favorite_color": "Mauv"
+}, {
+  "id": 15,
+  "first_name": "Heywood",
+  "last_name": "Creavan",
+  "email": "hcreavane@usda.gov",
+  "gender": "Male",
+  "favorite_color": "Crimson"
+}, {
+  "id": 16,
+  "first_name": "Kristyn",
+  "last_name": "Dunkley",
+  "email": "kdunkleyf@berkeley.edu",
+  "gender": "Female",
+  "favorite_color": "Yellow"
+}, {
+  "id": 17,
+  "first_name": "Geneva",
+  "last_name": "Andrasch",
+  "email": "gandraschg@fastcompany.com",
+  "gender": "Female",
+  "favorite_color": "Mauv"
+}, {
+  "id": 18,
+  "first_name": "Sharai",
+  "last_name": "Klimpke",
+  "email": "sklimpkeh@angelfire.com",
+  "gender": "Female",
+  "favorite_color": "Pink"
+}, {
+  "id": 19,
+  "first_name": "Weylin",
+  "last_name": "Bayless",
+  "email": "wbaylessi@liveinternet.ru",
+  "gender": "Male",
+  "favorite_color": "Blue"
+}, {
+  "id": 20,
+  "first_name": "Joann",
+  "last_name": "Dempster",
+  "email": "jdempsterj@wp.com",
+  "gender": "Female",
+  "favorite_color": "Yellow"
+}, {
+  "id": 21,
+  "first_name": "Shana",
+  "last_name": "Woolaston",
+  "email": "swoolastonk@jalbum.net",
+  "gender": "Female",
+  "favorite_color": "Blue"
+}, {
+  "id": 22,
+  "first_name": "Adelbert",
+  "last_name": "Bromage",
+  "email": "abromagel@amazon.co.uk",
+  "gender": "Male",
+  "favorite_color": "Yellow"
+}, {
+  "id": 23,
+  "first_name": "Sig",
+  "last_name": "Reymers",
+  "email": "sreymersm@nih.gov",
+  "gender": "Male",
+  "favorite_color": "Mauv"
+}, {
+  "id": 24,
+  "first_name": "Dulcie",
+  "last_name": "Heeps",
+  "email": "dheepsn@dmoz.org",
+  "gender": "Female",
+  "favorite_color": "Green"
+}, {
+  "id": 25,
+  "first_name": "Nobe",
+  "last_name": "Roakes",
+  "email": "nroakeso@vimeo.com",
+  "gender": "Male",
+  "favorite_color": "Yellow"
+}, {
+  "id": 26,
+  "first_name": "Jesus",
+  "last_name": "Seifert",
+  "email": "jseifertp@samsung.com",
+  "gender": "Male",
+  "favorite_color": "Aquamarine"
+}, {
+  "id": 27,
+  "first_name": "Naomi",
+  "last_name": "Gain",
+  "email": "ngainq@ebay.com",
+  "gender": "Female",
+  "favorite_color": "Blue"
+}, {
+  "id": 28,
+  "first_name": "Bentley",
+  "last_name": "Sneden",
+  "email": "bsnedenr@marriott.com",
+  "gender": "Male",
+  "favorite_color": "Puce"
+}, {
+  "id": 29,
+  "first_name": "Roanna",
+  "last_name": "Filisov",
+  "email": "rfilisovs@bloomberg.com",
+  "gender": "Female",
+  "favorite_color": "Purple"
+}, {
+  "id": 30,
+  "first_name": "Nessi",
+  "last_name": "Playford",
+  "email": "nplayfordt@opera.com",
+  "gender": "Female",
+  "favorite_color": "Turquoise"
+}, {
+  "id": 31,
+  "first_name": "Berti",
+  "last_name": "Dumsday",
+  "email": "bdumsdayu@omniture.com",
+  "gender": "Male",
+  "favorite_color": "Indigo"
+}, {
+  "id": 32,
+  "first_name": "Anastasia",
+  "last_name": "Camoys",
+  "email": "acamoysv@pagesperso-orange.fr",
+  "gender": "Female",
+  "favorite_color": "Khaki"
+}, {
+  "id": 33,
+  "first_name": "Fabien",
+  "last_name": "Corfield",
+  "email": "fcorfieldw@ask.com",
+  "gender": "Male",
+  "favorite_color": "Goldenrod"
+}, {
+  "id": 34,
+  "first_name": "Izabel",
+  "last_name": "Wheatman",
+  "email": "iwheatmanx@cnet.com",
+  "gender": "Female",
+  "favorite_color": "Red"
+}, {
+  "id": 35,
+  "first_name": "Nigel",
+  "last_name": "Mulvagh",
+  "email": "nmulvaghy@mediafire.com",
+  "gender": "Male",
+  "favorite_color": "Mauv"
+}, {
+  "id": 36,
+  "first_name": "Noland",
+  "last_name": "Gallemore",
+  "email": "ngallemorez@merriam-webster.com",
+  "gender": "Male",
+  "favorite_color": "Pink"
+}, {
+  "id": 37,
+  "first_name": "Osbourn",
+  "last_name": "Meineck",
+  "email": "omeineck10@freewebs.com",
+  "gender": "Male",
+  "favorite_color": "Aquamarine"
+}, {
+  "id": 38,
+  "first_name": "Eimile",
+  "last_name": "Stiggles",
+  "email": "estiggles11@webeden.co.uk",
+  "gender": "Female",
+  "favorite_color": "Orange"
+}, {
+  "id": 39,
+  "first_name": "Alyda",
+  "last_name": "Fenney",
+  "email": "afenney12@oracle.com",
+  "gender": "Female",
+  "favorite_color": "Mauv"
+}, {
+  "id": 40,
+  "first_name": "Karl",
+  "last_name": "Choake",
+  "email": "kchoake13@dagondesign.com",
+  "gender": "Male",
+  "favorite_color": "Teal"
+}, {
+  "id": 41,
+  "first_name": "Booth",
+  "last_name": "Masham",
+  "email": "bmasham14@constantcontact.com",
+  "gender": "Male",
+  "favorite_color": "Violet"
+}, {
+  "id": 42,
+  "first_name": "Joseito",
+  "last_name": "McCarry",
+  "email": "jmccarry15@ucoz.ru",
+  "gender": "Male",
+  "favorite_color": "Goldenrod"
+}, {
+  "id": 43,
+  "first_name": "Tudor",
+  "last_name": "Beckley",
+  "email": "tbeckley16@163.com",
+  "gender": "Male",
+  "favorite_color": "Turquoise"
+}, {
+  "id": 44,
+  "first_name": "Reinaldos",
+  "last_name": "Renvoys",
+  "email": "rrenvoys17@nih.gov",
+  "gender": "Male",
+  "favorite_color": "Maroon"
+}, {
+  "id": 45,
+  "first_name": "Matias",
+  "last_name": "Navein",
+  "email": "mnavein18@godaddy.com",
+  "gender": "Male",
+  "favorite_color": "Fuscia"
+}, {
+  "id": 46,
+  "first_name": "Thorin",
+  "last_name": "Calcott",
+  "email": "tcalcott19@thetimes.co.uk",
+  "gender": "Male",
+  "favorite_color": "Orange"
+}, {
+  "id": 47,
+  "first_name": "Ritchie",
+  "last_name": "Padginton",
+  "email": "rpadginton1a@cpanel.net",
+  "gender": "Male",
+  "favorite_color": "Yellow"
+}, {
+  "id": 48,
+  "first_name": "Reynold",
+  "last_name": "Paquet",
+  "email": "rpaquet1b@barnesandnoble.com",
+  "gender": "Male",
+  "favorite_color": "Fuscia"
+}, {
+  "id": 49,
+  "first_name": "Codie",
+  "last_name": "Marcham",
+  "email": "cmarcham1c@eepurl.com",
+  "gender": "Female",
+  "favorite_color": "Orange"
+}, {
+  "id": 50,
+  "first_name": "Jaclyn",
+  "last_name": "Godman",
+  "email": "jgodman1d@gmpg.org",
+  "gender": "Female",
+  "favorite_color": "Green"
+}, {
+  "id": 51,
+  "first_name": "Brita",
+  "last_name": "Mauger",
+  "email": "bmauger1e@cnbc.com",
+  "gender": "Female",
+  "favorite_color": "Orange"
+}, {
+  "id": 52,
+  "first_name": "Maxie",
+  "last_name": "Lemm",
+  "email": "mlemm1f@hp.com",
+  "gender": "Male",
+  "favorite_color": "Aquamarine"
+}, {
+  "id": 53,
+  "first_name": "Delaney",
+  "last_name": "Greyes",
+  "email": "dgreyes1g@ovh.net",
+  "gender": "Male",
+  "favorite_color": "Puce"
+}, {
+  "id": 54,
+  "first_name": "Leilah",
+  "last_name": "Vlasin",
+  "email": "lvlasin1h@nymag.com",
+  "gender": "Female",
+  "favorite_color": "Orange"
+}, {
+  "id": 55,
+  "first_name": "Adore",
+  "last_name": "Tommeo",
+  "email": "atommeo1i@mayoclinic.com",
+  "gender": "Female",
+  "favorite_color": "Khaki"
+}, {
+  "id": 56,
+  "first_name": "Saunders",
+  "last_name": "Stych",
+  "email": "sstych1j@bandcamp.com",
+  "gender": "Male",
+  "favorite_color": "Aquamarine"
+}, {
+  "id": 57,
+  "first_name": "Javier",
+  "last_name": "Davidovicz",
+  "email": "jdavidovicz1k@slideshare.net",
+  "gender": "Male",
+  "favorite_color": "Fuscia"
+}, {
+  "id": 58,
+  "first_name": "Adriaens",
+  "last_name": "McTeer",
+  "email": "amcteer1l@theguardian.com",
+  "gender": "Female",
+  "favorite_color": "Purple"
+}, {
+  "id": 59,
+  "first_name": "Barnabas",
+  "last_name": "Hylden",
+  "email": "bhylden1m@amazon.com",
+  "gender": "Male",
+  "favorite_color": "Orange"
+}, {
+  "id": 60,
+  "first_name": "Francklyn",
+  "last_name": "Glentz",
+  "email": "fglentz1n@aol.com",
+  "gender": "Male",
+  "favorite_color": "Pink"
+}, {
+  "id": 61,
+  "first_name": "Maura",
+  "last_name": "Stainton",
+  "email": "mstainton1o@360.cn",
+  "gender": "Female",
+  "favorite_color": "Goldenrod"
+}, {
+  "id": 62,
+  "first_name": "Orion",
+  "last_name": "Sewards",
+  "email": "osewards1p@csmonitor.com",
+  "gender": "Male",
+  "favorite_color": "Aquamarine"
+}, {
+  "id": 63,
+  "first_name": "Elsworth",
+  "last_name": "Leale",
+  "email": "eleale1q@studiopress.com",
+  "gender": "Male",
+  "favorite_color": "Puce"
+}, {
+  "id": 64,
+  "first_name": "Marketa",
+  "last_name": "Agdahl",
+  "email": "magdahl1r@yolasite.com",
+  "gender": "Female",
+  "favorite_color": "Puce"
+}, {
+  "id": 65,
+  "first_name": "Addy",
+  "last_name": "Cardon",
+  "email": "acardon1s@cyberchimps.com",
+  "gender": "Male",
+  "favorite_color": "Mauv"
+}, {
+  "id": 66,
+  "first_name": "Max",
+  "last_name": "Olkowicz",
+  "email": "molkowicz1t@domainmarket.com",
+  "gender": "Female",
+  "favorite_color": "Aquamarine"
+}, {
+  "id": 67,
+  "first_name": "Gwenora",
+  "last_name": "Kerton",
+  "email": "gkerton1u@de.vu",
+  "gender": "Female",
+  "favorite_color": "Goldenrod"
+}, {
+  "id": 68,
+  "first_name": "Royce",
+  "last_name": "Beckerleg",
+  "email": "rbeckerleg1v@mayoclinic.com",
+  "gender": "Male",
+  "favorite_color": "Turquoise"
+}, {
+  "id": 69,
+  "first_name": "Norrie",
+  "last_name": "Woodard",
+  "email": "nwoodard1w@gnu.org",
+  "gender": "Female",
+  "favorite_color": "Puce"
+}, {
+  "id": 70,
+  "first_name": "Franz",
+  "last_name": "Stainland",
+  "email": "fstainland1x@amazon.de",
+  "gender": "Male",
+  "favorite_color": "Green"
+}, {
+  "id": 71,
+  "first_name": "Henrik",
+  "last_name": "Quarterman",
+  "email": "hquarterman1y@usa.gov",
+  "gender": "Male",
+  "favorite_color": "Maroon"
+}, {
+  "id": 72,
+  "first_name": "Bord",
+  "last_name": "Jaskiewicz",
+  "email": "bjaskiewicz1z@diigo.com",
+  "gender": "Male",
+  "favorite_color": "Yellow"
+}, {
+  "id": 73,
+  "first_name": "Shanie",
+  "last_name": "Wanklin",
+  "email": "swanklin20@yahoo.com",
+  "gender": "Female",
+  "favorite_color": "Maroon"
+}, {
+  "id": 74,
+  "first_name": "Devlen",
+  "last_name": "Vesco",
+  "email": "dvesco21@thetimes.co.uk",
+  "gender": "Male",
+  "favorite_color": "Fuscia"
+}, {
+  "id": 75,
+  "first_name": "Fitzgerald",
+  "last_name": "Moutray Read",
+  "email": "fmoutrayread22@alexa.com",
+  "gender": "Male",
+  "favorite_color": "Puce"
+}, {
+  "id": 76,
+  "first_name": "Dalt",
+  "last_name": "Lille",
+  "email": "dlille23@spiegel.de",
+  "gender": "Male",
+  "favorite_color": "Turquoise"
+}, {
+  "id": 77,
+  "first_name": "Paola",
+  "last_name": "O'Fairy",
+  "email": "pofairy24@over-blog.com",
+  "gender": "Female",
+  "favorite_color": "Crimson"
+}, {
+  "id": 78,
+  "first_name": "Albert",
+  "last_name": "Poynzer",
+  "email": "apoynzer25@theglobeandmail.com",
+  "gender": "Male",
+  "favorite_color": "Blue"
+}, {
+  "id": 79,
+  "first_name": "Caryn",
+  "last_name": "Bage",
+  "email": "cbage26@google.ru",
+  "gender": "Female",
+  "favorite_color": "Fuscia"
+}, {
+  "id": 80,
+  "first_name": "Smith",
+  "last_name": "Polgreen",
+  "email": "spolgreen27@angelfire.com",
+  "gender": "Male",
+  "favorite_color": "Purple"
+}, {
+  "id": 81,
+  "first_name": "Blinny",
+  "last_name": "Baroux",
+  "email": "bbaroux28@artisteer.com",
+  "gender": "Female",
+  "favorite_color": "Blue"
+}, {
+  "id": 82,
+  "first_name": "Ado",
+  "last_name": "Ableson",
+  "email": "aableson29@google.pl",
+  "gender": "Male",
+  "favorite_color": "Red"
+}, {
+  "id": 83,
+  "first_name": "Maryellen",
+  "last_name": "Tomkies",
+  "email": "mtomkies2a@linkedin.com",
+  "gender": "Female",
+  "favorite_color": "Khaki"
+}, {
+  "id": 84,
+  "first_name": "Hedvig",
+  "last_name": "D'Enrico",
+  "email": "hdenrico2b@usnews.com",
+  "gender": "Female",
+  "favorite_color": "Mauv"
+}, {
+  "id": 85,
+  "first_name": "Glenna",
+  "last_name": "Nuzzetti",
+  "email": "gnuzzetti2c@w3.org",
+  "gender": "Female",
+  "favorite_color": "Indigo"
+}, {
+  "id": 86,
+  "first_name": "Andrei",
+  "last_name": "Lamberts",
+  "email": "alamberts2d@redcross.org",
+  "gender": "Female",
+  "favorite_color": "Blue"
+}, {
+  "id": 87,
+  "first_name": "Merl",
+  "last_name": "Meijer",
+  "email": "mmeijer2e@linkedin.com",
+  "gender": "Female",
+  "favorite_color": "Maroon"
+}, {
+  "id": 88,
+  "first_name": "Randi",
+  "last_name": "Queyos",
+  "email": "rqueyos2f@webnode.com",
+  "gender": "Male",
+  "favorite_color": "Blue"
+}, {
+  "id": 89,
+  "first_name": "Bea",
+  "last_name": "Pierrepoint",
+  "email": "bpierrepoint2g@4shared.com",
+  "gender": "Female",
+  "favorite_color": "Yellow"
+}, {
+  "id": 90,
+  "first_name": "Gradey",
+  "last_name": "Coverdale",
+  "email": "gcoverdale2h@cargocollective.com",
+  "gender": "Male",
+  "favorite_color": "Yellow"
+}, {
+  "id": 91,
+  "first_name": "Lazar",
+  "last_name": "Crump",
+  "email": "lcrump2i@weebly.com",
+  "gender": "Male",
+  "favorite_color": "Blue"
+}, {
+  "id": 92,
+  "first_name": "Culver",
+  "last_name": "Lantaff",
+  "email": "clantaff2j@histats.com",
+  "gender": "Male",
+  "favorite_color": "Mauv"
+}, {
+  "id": 93,
+  "first_name": "Sutherland",
+  "last_name": "Dank",
+  "email": "sdank2k@ftc.gov",
+  "gender": "Male",
+  "favorite_color": "Yellow"
+}, {
+  "id": 94,
+  "first_name": "Tadeo",
+  "last_name": "Ellsbury",
+  "email": "tellsbury2l@pinterest.com",
+  "gender": "Male",
+  "favorite_color": "Crimson"
+}, {
+  "id": 95,
+  "first_name": "Tedie",
+  "last_name": "Thulborn",
+  "email": "tthulborn2m@miibeian.gov.cn",
+  "gender": "Male",
+  "favorite_color": "Maroon"
+}, {
+  "id": 96,
+  "first_name": "Gaylene",
+  "last_name": "Murphey",
+  "email": "gmurphey2n@google.com.hk",
+  "gender": "Female",
+  "favorite_color": "Orange"
+}, {
+  "id": 97,
+  "first_name": "Rob",
+  "last_name": "Wein",
+  "email": "rwein2o@cpanel.net",
+  "gender": "Male",
+  "favorite_color": "Crimson"
+}, {
+  "id": 98,
+  "first_name": "Kath",
+  "last_name": "Fiveash",
+  "email": "kfiveash2p@cafepress.com",
+  "gender": "Female",
+  "favorite_color": "Puce"
+}, {
+  "id": 99,
+  "first_name": "Price",
+  "last_name": "Akid",
+  "email": "pakid2q@go.com",
+  "gender": "Male",
+  "favorite_color": "Blue"
+}, {
+  "id": 100,
+  "first_name": "Dion",
+  "last_name": "Ebbitt",
+  "email": "debbitt2r@un.org",
+  "gender": "Male",
+  "favorite_color": "Red"
+}]</pre>
+        </div>
+    </div>
+    <script>
+        var users;
+
+        function getDataFromTextArea() {
+            users = JSON.parse(document.getElementById('myTextAres').value);
+            console.log(users);
+            console.log(checkGender(users));
+            console.log(colors(users));
+            console.log(uniqueColor(users));
+            console.log(favoriteColor(users));
+            console.log(notUniqueNames(users));
+        }
+
+        function checkGender(users) {
+            var Male = 0;
+            var Female = 0;
+            for (var i = 0; i < users.length; i++) {
+                if (users[i]['gender'] === 'Male') {
+                    Male++;
+                } else {
+                    Female++;
+                }
+            }
+            return {
+                male: Male,
+                female: Female
+            };
+        }
+
+        function colors(users) {
+            var color = {};
+            for (var i = 0; i < users.length; i++) {
+                if (color[users[i]['favorite_color']]) {
+                    color[users[i]['favorite_color']]++;
+                } else {
+                    color[users[i]['favorite_color']] = 1;
+                }
+            }
+            return color;
+        }
+
+        function uniqueColor(users) {
+            var unique = {};
+            for (var i = 0; i < users.length; i++) {
+                if (unique[users[i]['favorite_color']]) {
+                    unique[users[i]['favorite_color']]++;
+                } else {
+                    unique[users[i]['favorite_color']] = 1;
+                }
+            }
+            for (var key in unique) {
+                if (unique[key] != 1) {
+                    delete unique[key];
+                }
+            }
+            if (Object.keys(unique).length === 0) {
+                return unique = ['unique colors have not found'];
+            } else {
+                return unique;
+            }
+        }
+
+        function favoriteColor(users) {
+            var favorite = {};
+            var sortable = [];
+            for (var i = 0; i < users.length; i++) {
+                if (favorite[users[i]['favorite_color']]) {
+                    favorite[users[i]['favorite_color']]++;
+                } else {
+                    favorite[users[i]['favorite_color']] = 1;
+                }
+            }
+            for (var key in favorite) {
+                sortable.push([key, favorite[key]]);
+            }
+            return sortable.reduce(function (a, b) {
+                return a[1] > b[1] ? a : b;
+            }, sortable[0]);
+        }
+
+
+
+
+        function notUniqueNames(users) {
+            var name = {};
+            var mostCommon = [];
+            for (var i = 0; i < users.length; i++) {
+                if (name[users[i]['first_name']]) {
+                    name[users[i]['first_name']]++;
+                } else {
+                    name[users[i]['first_name']] = 1;
+                }
+            }
+
+            for (var key in name) {
+                if (name[key] > 1) {
+                    mostCommon.push(key, name[key]);
+                }
+            }
+            if (mostCommon.length === 0) {
+                return mostCommon = ["all names are unique"];
+            } else {
+                return mostCommon;
+            }
+        }
+    </script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
