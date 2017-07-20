@@ -32,9 +32,9 @@ function cypherPhrase(encoder, word, fn) {
 
 
 
-function decypherPhrase(decoder, word){
+function decypherPhrase(decoder, word) {
     var encoder = {};
-    for(var key in decoder){
+    for (var key in decoder) {
         encoder[decoder[key]] = key;
     }
     return cypherPhrase(encoder, word);

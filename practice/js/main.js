@@ -1,4 +1,5 @@
 var votes = ["angular", "angular", "react", "react", "react", "angular", "ember", "react", "vanilla"];
+
 var vote = function (arr) {
     var votes = {};
     for (var i = 0; i < arr.length; i++) {
@@ -10,5 +11,7 @@ var vote = function (arr) {
     }
     return votes;
 }
+
 var result = vote(votes);
+
 console.log(result);

@@ -16,6 +16,7 @@ function increment(num) {
     return num + 1;
 }
 
+
 function getTransformedArray(arr, fn) {
     var tempArr = [];
     forEach(arr, function (item, index, someArr) {
