@@ -17,6 +17,7 @@ var people = [
       }
   ];
 
+
 function forEach(arr, fn) {
     for (var i = 0; i < arr.length; i++) {
         fn(arr[i], i, arr);
@@ -35,7 +36,6 @@ function getTransformedArray(arr, fn) {
 
 
 function pluckByAttribute(arr, label) {
-    
     return getTransformedArray(arr, function (obj) {
         for (var key in obj) {
             if (key === label) {
@@ -47,20 +47,21 @@ function pluckByAttribute(arr, label) {
 
 function getTopNRichestNames(num, arr) {
     var converteredArr = arr;
-    converteredArr.map(function (el) {
-        var income = el['income'].split('');
-        var letter = income[1];
-        if (letter === 'B') {
-            income[1] = 1e9;
-        } else if (letter === 'M') {
-            income[1] = 1e6;
-        } else if (letter === 'K') {
-            income[1] = 1e3;
-        }
-        el['income'] = income[1] * income[0];
-        return el;
-    });
-    i = 2
+    if (typeof converteredArr[0]['income'] === 'string') {
+        converteredArr.map(function (el) {
+            var income = el['income'].split('');
+            var letter = income[1];
+            if (letter === 'B') {
+                income[1] = 1e9;
+            } else if (letter === 'M') {
+                income[1] = 1e6;
+            } else if (letter === 'K') {
+                income[1] = 1e3;
+            }
+            el['income'] = income[1] * income[0];
+            return el;
+        });
+    }
     var sorted = converteredArr.sort(function (a, b) {
         return a['income'] < b['income'];
     });
@@ -70,3 +71,5 @@ function getTopNRichestNames(num, arr) {
 
 
 console.log(getTopNRichestNames(2, people));
+
+console.log(getTopNRichestNames(100, people));
