@@ -45,23 +45,22 @@ function pluckByAttribute(arr, label) {
     });
 }
 
+
 function getTopNRichestNames(num, arr) {
-    var converteredArr = arr;
-    if (typeof converteredArr[0]['income'] === 'string') {
-        converteredArr.map(function (el) {
-            var income = el['income'].split('');
-            var letter = income[1];
-            if (letter === 'B') {
-                income[1] = 1e9;
-            } else if (letter === 'M') {
-                income[1] = 1e6;
-            } else if (letter === 'K') {
-                income[1] = 1e3;
-            }
-            el['income'] = income[1] * income[0];
-            return el;
-        });
-    }
+    var converteredArr = arr.map(copyArr => Object.assign({}, copyArr));
+    converteredArr.map(function (el) {
+        var income = el['income'].split('');
+        var letter = income[1];
+        if (letter === 'B') {
+            income[1] = 1e9;
+        } else if (letter === 'M') {
+            income[1] = 1e6;
+        } else if (letter === 'K') {
+            income[1] = 1e3;
+        }
+        el['income'] = income[1] * income[0];
+        return el;
+    });
     var sorted = converteredArr.sort(function (a, b) {
         return a['income'] < b['income'];
     });
