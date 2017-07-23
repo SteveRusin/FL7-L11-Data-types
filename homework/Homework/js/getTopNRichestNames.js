@@ -50,12 +50,11 @@ function getTopNRichestNames(num, arr) {
     var converteredArr = arr.map(copyArr => Object.assign({}, copyArr));
     converteredArr.map(function (el) {
         var income = el['income'].split('');
-        var letter = income[1];
-        if (letter === 'B') {
+        if (income[1] === 'B') {
             income[1] = 1e9;
-        } else if (letter === 'M') {
+        } else if (income[1] === 'M') {
             income[1] = 1e6;
-        } else if (letter === 'K') {
+        } else if (income[1] === 'K') {
             income[1] = 1e3;
         }
         el['income'] = income[1] * income[0];
